@@ -1,0 +1,61 @@
+.box{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+
+    /* linear gradient  */
+    background-image: linear-gradient(red,blue); 
+    background-image: linear-gradient(to right,red,blue);
+    background-image: linear-gradient(to left,red,blue);
+    background-image: linear-gradient(to top,red,blue);
+    background-image: linear-gradient(to bottom,red,blue);
+    background-image: linear-gradient(to bottom right,red,blue);
+    background-image: linear-gradient(to bottom left,red,blue);
+    background-image: linear-gradient(to top right,red,blue);
+    background-image: linear-gradient(to top left,red,blue); 
+    background-image: linear-gradient(210deg ,red,blue); 
+    background-image: linear-gradient(to bottom,rgba(1, 49, 1, 0.179),rgba(162, 255, 162,0));
+    background-image: linear-gradient(orange,white,green);
+    
+}
+
+.box1{
+    border: 2px solid black;
+    margin-top: 5px;
+    height: 200px;
+    width: 200px;
+    background-image: radial-gradient(red,blue);
+    background-image: radial-gradient(red,blue,white);
+    background-image: radial-gradient(circle,red,blue,white);
+    background-image: radial-gradient(lightgreen 20% , white 30% , rgb(240, 240, 36) 50%);
+
+}
+
+h1{
+    text-shadow: 2px 2px 3px red;
+    text-shadow: 2px 2px 3px red , 6px 6px 6px blue;
+}
+
+.box2{
+    border: 2px solid black;
+    width: 300px;
+    max-height: 300px;
+    /* max-width: 500px; */
+    overflow: scroll;
+}
+
+.box3{
+    border: 2px solid black;
+    margin-top: 1px ;
+    width: 200px;
+    min-height: 200px;
+}
+
+span{
+    border: 2px solid black;
+}
+
+#1{
+    display: inline-block;
+    width: 100px;
+}

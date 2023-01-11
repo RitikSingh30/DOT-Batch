@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .translate{
+           transform: perspective(15px) translateZ(-10px);
+           /* transform: perspective(15px) translate3d(10px,10px,-10px); */
+        }
+        .rotate{
+           
+        }
+        .scale{
+
+        }
+        .skew{
+            margin-left: 200px;
+            /* transform: perspective(500px) translate(10px, 0, 20px) rotateY(3deg); */
+            transform: perspective(15px) scaleZ(0.3) rotateY(30deg);
+            /* transform: rotate3d(1, 2, 3, 10deg); */
+        }
+        .matrix{
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="translate">translate</div>
+    <div class="rotate">rotate</div>
+    <div class="scale">scale</div>
+    <div class="skew">skew</div>
+    <div class="matrix">matrix</div>
+</body>
+</html>
