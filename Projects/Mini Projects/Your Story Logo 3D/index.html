@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Story</title>
+    <style>
+        .container{
+            position: relative;;
+            margin-left: 15rem;
+            width: 50rem;
+            height: 50rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+        }
+        .box{
+            position: absolute;
+            height: 20%;
+            width: 20%;
+            border: 4px solid red;
+        }
+        .front{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 49px;
+            color: red;
+            transform: translateZ(10px);
+            background-color: white;
+        }
+        .back{
+            width: 40%;
+            transform: translate(-19px, 36px);
+        }
+        .left{
+            width: 10%;
+            transform: translate(-173px,18px) rotateY(77deg) skew(359deg, 337deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="front box">YOURSTORY</div>
+            <div class="back box"></div>
+            <div class="left box"></div>
+        </div>
+    </div>
+</body>
+</html>
