@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            justify-content: flex-start;
+            justify-content:space-around;
+            justify-content:space-between;
+            justify-content:space-evenly;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            align-items: stretch;
+            justify-content: center;
+            align-items: center;
+            /* gap: 10px; */
+            flex-wrap: wrap;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-between;
+            align-content: space-around;
+            align-content: space-evenly;
+            align-content: flex-start;
+        }
+        .box{
+            border: 1px solid red ;
+            /* flex-basis: 100px; */
+            width: 100px;
+            flex-basis: 50%;
+            text-align: center;
+            /* flex-grow: 1; */
+        }
+        .box3{
+            order: 2;
+            /* flex-grow: 3; */
+            /* flex-shrink: 4; */
+            /* align-self: stretch; */
+            
+        }
+        .box2{
+            /* align-self: flex-end; */
+            /* order: 2; */
+        }
+        .box1{
+            /* align-self: flex-start; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+</body>
+</html>
