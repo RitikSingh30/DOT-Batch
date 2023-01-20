@@ -81,4 +81,14 @@ section{
     background-position: center;
 }
 
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 47%;
+    left: 36%;
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
 
