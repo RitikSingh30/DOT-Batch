@@ -6,7 +6,7 @@
 
 #wrapper {
     position: relative;
-    width: 1440px;
+    width: 100vw;
     height: 1851px;
     background-color: #f3f4f6;
 }
@@ -157,7 +157,8 @@
     line-height: 45px;
     color: #16171C;
     font-stretch: 100;
-    font-variation-settings: 'GRAD' 122, 'slnt' 0, 'XTRA' 603, 'XOPQ' 96, 'YOPQ' 100, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+    /* font-variation-settings: 'GRAD' 122, 'slnt' 0, 'XTRA' 603, 'XOPQ' 96, 'YOPQ' 100, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738; */
+    font-variation-settings: 'wght' 500;
 }
 
 #nameunderline1 {
@@ -200,4 +201,140 @@
     left: 80px;
     top: 1553px;
     background: url("./Logo.png");
+}
+
+.privacy {
+    position: absolute;
+    width: 231px;
+    height: 32px;
+    left: 70px;
+    top: 1681px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+
+    letter-spacing: 3px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+
+    color: #4E5DC0;
+}
+
+.rightreserved{
+    position: absolute;
+    width: 150px;
+    height: 64px;
+    left: 70px;
+    top: 1727px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #999999;
+}
+
+.address{
+    position: absolute;
+    width: 92px;
+    height: 32px;
+    left: 435px;
+    top: 1521px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4E5DC0;
+}
+
+.para2{
+    position: absolute;
+    width: 332px;
+    height: 96px;
+    left: 435px;
+    top: 1567px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #999999;
+}
+
+.email{
+    position: absolute;
+    width: 61px;
+    height: 32px;
+    left: 435px;
+    top: 1703px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4E5DC0;
+}
+
+.emailvalue{
+    position: absolute;
+    width: 185px;
+    height: 32px;
+    left: 435px;
+    top: 1749px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #999999;
+}
+
+.menu{
+    position: absolute;
+    width: 57px;
+    height: 32px;
+    left: 925px;
+    top: 1521px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4E5DC0;
+}
+
+.bar{
+    position: absolute;
+    width: 69px;
+    height: 128px;
+    left: 925px;
+    top: 1567px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #999999;
+}
+
+.symbole{
+    position: absolute;
+    background:url("./social.png");
+    width: 170px;
+    height: 48px;
+    background-repeat: no-repeat;
+    left: 1210px;
+    top: 1517px;
 }

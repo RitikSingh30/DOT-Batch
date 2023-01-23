@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    height: 98vh;
+    width: 99vw;
+    grid-template-rows: 80px repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "header header" "blog1 blog2" "blog3 blog4" "blog5 blog6";
+    grid-gap: 20px;
+    grid-row-gap: 25px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.box div:first-child{
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 90%;
+    padding: 13px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.box div{
+    position: relative;
+}
+
+.box div span:first-child{
+    color: blue;
+    font-weight: 700;
+}
+
+.box div span:nth-child(3){
+    color: grey;
+}
+
+.box div h2{
+    margin-top: 8px;
+}
+
+a{
+    position: absolute;
+    bottom: 12px;
+}
+
+.box1{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    margin: 0 34px;
+}
+
+.box1 span , .box1 h1{
+    text-decoration:underline;
+}
+
+.box2{
+    grid-area: blog1;
+}
+
+.box3 div span:first-child , .box5 div span:first-child , .box7 div span:first-child{
+    color: rgb(97, 189, 10);
+}
+
+.box3{
+    grid-area: blog2;
+}
+.box4{
+    grid-area: blog3;
+}
+.box5{
+    grid-area: blog4;
+}
+.box6{
+    grid-area: blog5;
+}
+.box7{
+    grid-area: blog6;
+}

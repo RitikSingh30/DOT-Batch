@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex and grid together</title>
+    <style>
+        .container{
+            background-color: yellow;
+            border: 2px solid black;
+            height: 500px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 1fr 1fr;
+            grid-template-areas: "first first" "second third" "fourth fourth";
+            grid-gap: 2px;
+        }
+        .box{
+            background-color: rgb(108, 236, 108);
+            border: 2px dashed blue;
+        }
+        .box1{
+            grid-area: first;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: red;
+        }
+        .box2{
+            grid-area: second;
+        }
+        .box3{
+            grid-area: third;
+        }
+        .box4{
+            grid-area: fourth;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <div class="innerbox">Home</div>
+            <div class="innerbox">Contact Us</div>
+            <div class="innerbox">support</div>
+        </div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+</body>
+</html>
